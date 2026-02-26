@@ -456,8 +456,8 @@ function Footer() {
         </div>
         <div className="flex flex-col gap-2 text-sm text-white/50 md:text-right">
           <div className="flex gap-4">
-            <a href="#" className="hover:text-white/80 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white/80 transition-colors">Terms of Service</a>
+            <a href="/privacy" className="hover:text-white/80 transition-colors">Privacy Policy</a>
+            <a href="/tos" className="hover:text-white/80 transition-colors">Terms of Service</a>
             <a href="mailto:contact@revexos.com" className="hover:text-white/80 transition-colors">
               contact@revexos.com
             </a>
