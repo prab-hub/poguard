@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 // ─── Waitlist Form ────────────────────────────────────────────────────────────
 function WaitlistForm({ dark = false }: { dark?: boolean }) {
@@ -74,10 +75,7 @@ function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-[#0f1115]">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <span className="text-xl font-bold tracking-tight">
-          <span className="text-white">PO</span>
-          <span className="text-[#16a34a]">Guard</span>
-        </span>
+        <Image src="/POGuard-logo.png" alt="POGuard" height={36} width={111} priority />
         <a
           href="#waitlist"
           className="rounded-lg bg-[#16a34a] px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#15803d]"
@@ -448,10 +446,7 @@ function Footer() {
     <footer className="bg-[#0f1115] border-t border-white/10 px-6 py-10">
       <div className="mx-auto max-w-5xl flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
         <div>
-          <p className="mb-1 text-lg font-bold">
-            <span className="text-white">PO</span>
-            <span className="text-[#16a34a]">Guard</span>
-          </p>
+          <Image src="/POGuard-logo.png" alt="POGuard" height={32} width={99} className="mb-1" />
           <p className="text-sm text-white/50">Never invoice against an expired PO again.</p>
         </div>
         <div className="flex flex-col gap-2 text-sm text-white/50 md:text-right">

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Terms of Service — POGuard",
@@ -10,10 +11,7 @@ export default function TermsOfService() {
     <div className="min-h-screen bg-white">
       <nav className="bg-[#0f1115] px-6 py-4">
         <div className="mx-auto max-w-3xl">
-          <Link href="/" className="text-xl font-bold tracking-tight">
-            <span className="text-white">PO</span>
-            <span className="text-[#16a34a]">Guard</span>
-          </Link>
+          <Link href="/"><Image src="/POGuard-logo.png" alt="POGuard" height={36} width={111} priority /></Link>
         </div>
       </nav>
 
