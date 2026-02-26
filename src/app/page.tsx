@@ -462,7 +462,7 @@ function Footer() {
               contact@revexos.com
             </a>
           </div>
-          <p>© 2025 POGuard. A product by OTR Automations.</p>
+          <p>© 2026 POGuard. A product by OTR Automations.</p>
         </div>
       </div>
     </footer>
