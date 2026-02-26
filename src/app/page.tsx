@@ -142,17 +142,11 @@ function PainSection() {
         <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-[#6b7280]">
           What Happens Without It
         </p>
-        <h2 className="mb-4 text-3xl font-bold text-[#111827] md:text-4xl">
+        <h2 className="mb-8 text-3xl font-bold text-[#111827] md:text-4xl">
           A $47,000 invoice sat unpaid for 6 weeks. The PO had expired two
           months earlier.
         </h2>
-        <p className="mb-6 max-w-3xl text-lg leading-relaxed text-[#374151]">
-          Their AP system silently rejects invoices for three reasons: expired PO, exceeded cap, wrong PO number. No email. No notification. Just a payment that doesn&apos;t arrive.
-        </p>
-        <p className="mb-12 max-w-3xl text-lg leading-relaxed text-[#374151]">
-          Three weeks later you chase the client. AP says &quot;wrong PO.&quot; You re-invoice. Another week gone. This happens because POs live in email attachments — not your accounting system.
-        </p>
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="mb-10 grid gap-6 md:grid-cols-3">
           {stats.map((s) => (
             <div
               key={s.value}
@@ -164,6 +158,12 @@ function PainSection() {
             </div>
           ))}
         </div>
+        <p className="mb-4 max-w-3xl text-lg leading-relaxed text-[#374151]">
+          Their AP system silently rejects invoices for three reasons: expired PO, exceeded cap, wrong PO number. No email. No notification. Just a payment that doesn&apos;t arrive.
+        </p>
+        <p className="max-w-3xl text-lg leading-relaxed text-[#374151]">
+          Three weeks later you chase the client. AP says &quot;wrong PO.&quot; You re-invoice. Another week gone. This happens because POs live in email attachments — not your accounting system.
+        </p>
       </div>
     </section>
   );
@@ -458,8 +458,8 @@ function Footer() {
           <div className="flex gap-4">
             <a href="#" className="hover:text-white/80 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white/80 transition-colors">Terms of Service</a>
-            <a href="mailto:prabhu@cloudifybiz.com" className="hover:text-white/80 transition-colors">
-              prabhu@cloudifybiz.com
+            <a href="mailto:contact@revexos.com" className="hover:text-white/80 transition-colors">
+              contact@revexos.com
             </a>
           </div>
           <p>© 2025 POGuard. A product by OTR Automations.</p>

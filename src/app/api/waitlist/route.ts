@@ -56,7 +56,7 @@ export async function POST(req: NextRequest) {
   // Send confirmation email
   const resend = new Resend(process.env.RESEND_API_KEY!);
   await resend.emails.send({
-    from: "POGuard <prabhu@cloudifybiz.com>",
+    from: "POGuard <contact@revexos.com>",
     to: normalised,
     subject: "You're on the POGuard waitlist",
     text: `Hi,
@@ -71,7 +71,7 @@ Quick question while you're here: how often does a PO issue delay one of your in
 
 Prabhu
 OTR Automations
-prabhu@cloudifybiz.com`,
+contact@revexos.com`,
   });
 
   return NextResponse.json({ ok: true });
